@@ -27,7 +27,7 @@ namespace Biblioteca_API.Repository
             return context
                 .Autores
                 .Include(c => c.livros)
-                .FirstOrDefault(c => c.IdAutores == id);
+                .FirstOrDefault(c => c.AutoresId == id);
         }
         public Autores Add(Autores entity)
         {

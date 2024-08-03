@@ -2,9 +2,11 @@
 {
     public class Livros
     {
-        public int? IdLivro { get; set; }
+        public int LivroId { get; set; }
         public string? Titulo { get; set; }
+        public int? AutoresId { get; set; }
         public virtual Autores? autores { get; set; }
+        public int? EditorasId { get; set; }
         public virtual Editoras? editoras { get; set; }
 
     }

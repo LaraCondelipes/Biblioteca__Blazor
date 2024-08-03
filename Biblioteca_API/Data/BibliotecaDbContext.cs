@@ -14,9 +14,9 @@ namespace Biblioteca_API.Data
         public DbSet<Autores> Autores { get; set; }
         public DbSet<CategoriasLiterarias> CategoriasLiterarias { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Livros>().HasKey(x => new { x.IdEditoras, x.IdAutores });
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Livros>().HasKey(x => new { x.EditorasId, x.AutoresId });
+        }
     }
 }

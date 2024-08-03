@@ -8,8 +8,8 @@ namespace Biblioteca_Models
 {
    public class Autores
     {
-        public int? IdAutores { get; set; }
-        public string? NameAutores { get; set; }
+        public int? AutoresId { get; set; }
+        public string? AutoresName { get; set; }
 
         public List<Livros> livros { get; set; }
     }

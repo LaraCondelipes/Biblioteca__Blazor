@@ -8,8 +8,8 @@ namespace Biblioteca_Models
 {
     public class CategoriasLiterarias
     {
-        public int? IdCategoriasLiterarias { get; set; }
-        public string? NameCategoriaLiteraria { get; set; }
+        public int? CategoriasLiterariasId { get; set; }
+        public string? CategoriaLiterariaName { get; set; }
         public List<Livros>? livros { get; set; } 
     }
 }

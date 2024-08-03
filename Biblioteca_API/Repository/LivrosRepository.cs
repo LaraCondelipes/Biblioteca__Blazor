@@ -39,7 +39,7 @@ namespace Biblioteca_API.Repository
                 .Livros
                 .Include(c => c.editoras)
                 .Include(c => c.autores)
-                .FirstOrDefault(b => b.IdLivro == id);
+                .FirstOrDefault(b => b.LivroId == id);
         }
 
         public Livros Update(Livros entity)
