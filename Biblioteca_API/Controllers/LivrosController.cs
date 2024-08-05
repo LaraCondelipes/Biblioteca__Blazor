@@ -41,7 +41,7 @@ namespace Biblioteca_API.Controllers
         // PUT: api/Livros/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public PutLivros(int id, Livros livros)
+        public void PutLivros(int? id, Livros livros)
         {
             if (id != livros.EditorasId)
             {

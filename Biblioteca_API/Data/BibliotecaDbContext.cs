@@ -13,6 +13,7 @@ namespace Biblioteca_API.Data
         public DbSet<Editoras> Editoras { get; set; }
         public DbSet<Autores> Autores { get; set; }
         public DbSet<CategoriasLiterarias> CategoriasLiterarias { get; set; }
+        public DbSet<Avaliacao> Avaliacao { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

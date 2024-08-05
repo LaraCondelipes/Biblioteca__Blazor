@@ -9,7 +9,7 @@ namespace Biblioteca_Models
     public class Editoras
     {
         public int? EditorasId { get; set; }
-        public string? EditorasNamw { get; set; }
+        public string? EditorasName { get; set; }
         public DateTime? DatePublic { get; set; }
         public List<Livros>? livros { get; set; }
     }
